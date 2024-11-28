@@ -1,0 +1,352 @@
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f6;
+    margin: 5px;
+    padding: 0;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: #4CAF50;
+    margin-top: 30px;
+}
+
+/* Container for the quiz */
+form {
+    width: 100%;
+    max-width: 800px;
+    margin: 30px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for each question */
+div {
+    margin-bottom: 30px;
+}
+
+p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+/* Button styling */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Result page */
+h1 {
+    color: #333;
+}
+
+.result-container {
+    width: 70%;
+    max-width: 600px;
+    margin: 30px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+p {
+    font-size: 20px;
+}
+
+a {
+    display: inline-block;
+    margin-top: 20px;
+    color: #f5b60a;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    form {
+        width: 90%;
+    }
+
+    .result-container {
+        width: 90%;
+    }
+}
+
+/*footer css*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 10px;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer-body {
+  display: flex;
+  background: #f4f7f6;
+  justify-content: flex-end;
+  align-items: flex-end;
+  min-height: 60vh;
+}
+
+.footer {
+  position: relative;
+  width: 100%;
+  background: #3586ff;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.social-icon,
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.social-icon__item,
+.menu__item {
+  list-style: none;
+}
+
+
+.social-icon__link {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+.social-icon__link:hover {
+  transform: translateY(-10px);
+}
+
+.menu__link {
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+  font-weight: 300;
+}
+
+.menu__link:hover {
+  opacity: 1;
+}
+
+.footer p {
+  color: #fff;
+  margin: 15px 0 10px 0;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.wave {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url("https://i.ibb.co/wQZVxxk/wave.png");
+  background-size: 1000px 100px;
+}
+
+.wave#wave1 {
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  animation: animateWaves 4s linear infinite;
+}
+
+.wave#wave2 {
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animate 4s linear infinite !important;
+}
+
+.wave#wave3 {
+  z-index: 1000;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: animateWaves 3s linear infinite;
+}
+
+.wave#wave4 {
+  z-index: 999;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animate 3s linear infinite;
+}
+
+@keyframes animateWaves {
+  0% {
+    background-position-x: 1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position-x: -1000px;
+  }
+  100% {
+    background-positon-x: 0px;
+  }
+}
+
+/*8 media queries*/
+/* 1. Extra Small Devices (Portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    body {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .container {
+        width: 90%;
+    }
+}
+
+/* 2. Small Devices (Landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    body {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .container {
+        width: 85%;
+    }
+}
+
+/* 3. Medium Devices (Tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    body {
+        font-size: 17px;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    .container {
+        width: 75%;
+    }
+}
+
+/* 4. Large Devices (Large tablets, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    body {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .container {
+        width: 70%;
+    }
+}
+
+/* 5. Extra Large Devices (Small desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+    body {
+        font-size: 19px;
+    }
+
+    h1 {
+        font-size: 2.8rem;
+    }
+
+    .container {
+        width: 65%;
+    }
+}
+
+/* 6. 2x Extra Large Devices (Large desktops, 1400px and up) */
+@media (min-width: 1400px) and (max-width: 1599.98px) {
+    body {
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .container {
+        width: 60%;
+    }
+}
+
+/* 7. 3x Extra Large Devices (Very large screens, 1600px and up) */
+@media (min-width: 1600px) and (max-width: 1799.98px) {
+    body {
+        font-size: 21px;
+    }
+
+    h1 {
+        font-size: 3.2rem;
+    }
+
+    .container {
+        width: 55%;
+    }
+}
+
+/* 8. Ultra Wide Screens (1800px and up) */
+@media (min-width: 1800px) {
+    body {
+        font-size: 22px;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    .container {
+        width: 50%;
+    }
+}
